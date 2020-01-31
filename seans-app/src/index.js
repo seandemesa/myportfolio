@@ -8,7 +8,7 @@ import 'react-mdl/extra/material.js'
 import {BrowserRouter, HashRouter} from 'react-router-dom'
 
 ReactDOM.render(
-        <HashRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter>
     <App />
         </HashRouter>
     
@@ -17,3 +17,4 @@ ReactDOM.render(
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
