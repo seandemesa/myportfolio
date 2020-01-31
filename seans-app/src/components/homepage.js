@@ -5,10 +5,10 @@ import {Grid, Cell} from 'react-mdl';
 class HomePage extends Component {
     render(){
         return(
-        <div>testing
-        testing
+        <div>
+        <div>
+            <a>TESTING TESTING TESTING</a>
         </div>
-
          <div style = {{width: '100%', margin: 'auto', overflow: 'auto'}}>
             <Grid className = "landing-grid" style = {{overflow: 'auto'}}>
                 <Cell col = {12}>
@@ -38,7 +38,8 @@ class HomePage extends Component {
                     </div>
                 </Cell>
             </Grid>
-         </div>   
+         </div> 
+         </div>  
         )
     }
 }
