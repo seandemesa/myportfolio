@@ -82,6 +82,7 @@ li a:hover {
   background: linear-gradient(to left, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
+  text-align: center;
   position: fixed;
   top: 5;
   left: 0;
