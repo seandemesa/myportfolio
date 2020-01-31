@@ -7,13 +7,14 @@ import Projects from './projects';
 
 
 const Main = () => (
+    <BrowserRouter>
         <Switch>
             <Route exact path ="/" component={HomePage} />
             <Route path ="/projects" component={NewProjectsPage} />
             <Route path ="/contact" component={Contact} />
             {/*<Route path ="/projects" component={Projects} />*/}
         </Switch>
-
+    </BrowserRouter>
 
 )
 export default Main;
