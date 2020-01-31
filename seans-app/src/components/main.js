@@ -7,7 +7,7 @@ import Projects from './projects';
 
 
 const Main = () => (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
             <Route exact path ="/" component={HomePage} />
             <Route path ="/projects" component={NewProjectsPage} />
