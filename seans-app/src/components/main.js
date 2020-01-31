@@ -7,7 +7,7 @@ import Projects from './projects';
 
 
 const Main = () => (
-    <HashRouter>
+    <HashRouter basename="/">
         <Switch>
             <Route exact path ="/" component={HomePage} />
             <Route path ="/projects" component={NewProjectsPage} />
