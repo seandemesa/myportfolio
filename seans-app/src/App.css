@@ -1,0 +1,268 @@
+/*.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
+
+
+/*ul{
+  list-style-type: none; /*removes bullets
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(187, 69, 69);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li{
+  float: left;
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: rgb(150, 45, 199);
+}
+*/
+.header-color{
+  background: #355C7D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.landing-grid{
+  background: #355C7D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  text-align: center;
+  position: fixed;
+  top: 5;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+/*resume page css*/
+.resume-right-col {
+  background: #27221F;
+  color: white;
+  padding: 2em;
+}
+
+.projects-grid {
+  display: flex;
+}
+
+
+/* contact page css*/
+.contact-body {
+
+
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 94%;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.contact-grid {
+
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: white;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.contact-grid  h2{
+  font-family: 'Courier New', sans-serif;
+}
+
+.contact-grid p {
+  font-family: 'Courier New' sans-serif;
+  font-weight: bold;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list i {
+  font-size: 4vw;
+  padding-right: 5rem;
+}
+
+.avatar-img{
+  height: 250px;
+  padding-top: 5em;
+}
+
+.banner-text{
+  /*background-color:black;*/
+  font-Family: "Courier New";
+  opacity: 100%;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+
+}
+
+/*home page css*/
+.banner-text h1{
+  font-Family: "Courier New";
+  font-size: 5vw;
+  font-weight:bold;
+  color: white;
+}
+
+.banner-text h2{
+  font-Family: "Courier New";
+  font-size: 3vw;
+  font-weight:bold;
+  color: white;
+}
+
+/*.banner-text hr{
+  border-top: 5px dotted white;
+  width: 50%;
+  margin:auto;
+}*/
+
+.banner-text hr{
+  width: 50%;
+  margin:auto;
+}
+
+.banner-text p{
+  color: white;
+  font-size: 1.25vw;
+  padding: 1em;
+}
+
+.social-links{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i{
+  color:white;
+  font-size: 5em;
+  padding: 8px;
+}
+
+.social-links2 i{
+  color:black;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("C:\Users\Nap\seans-app\src\machineLearning2.png");
+
+  /* Set a specific height */
+  min-height: 400px; 
+
+  opacity: 100%;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.fullOpacity {
+  /* The image used */
+
+  opacity: 100%;
+}
+
+.parallaxTwo {
+  /* The image used */
+  background-image: url("C:\Users\Nap\seans-app\src\a star 2.png");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxThree {
+  /* The image used */
+  background-image: url("C:\Users\Nap\seans-app\src\citruscide logo 2.png");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
