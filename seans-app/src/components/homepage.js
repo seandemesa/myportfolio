@@ -20,8 +20,8 @@ class HomePage extends Component {
                     */}
 
                     <div className = "banner-text" >
-                        <h1>Sean de Mesa</h1>
-                            <h2>Full Stack Developer</h2>
+                        <h1 style={{color: 'white'}}>Sean de Mesa</h1>
+                            <h2 style={{color: 'gray'}}>Full Stack Developer</h2>
                         <p>C++ | Python | HTML | CSS | JavaScript | React | NodeJS | MySQL</p>
 
                         <hr/>
