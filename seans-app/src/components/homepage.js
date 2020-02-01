@@ -7,10 +7,10 @@ class HomePage extends Component {
         return(
         <div>
         <div>
-            <a>NEW BUILD NEW BUILD V2 V2 V2</a>
+            <a style={{color: 'black'}}>NEW BUILD NEW BUILD V2 V2 V2</a>
         </div>
          <div style = {{width: '100%', margin: 'auto', overflow: 'auto'}}>
-            <Grid className = "landing-grid" style = {{background: 'black', overflow: 'auto'}}>
+            <Grid className = "landing-grid" style = {{background: 'green', overflow: 'auto'}}>
                 <Cell col = {12}>
                     {/*<img
                         src = "https://cdn0.iconfinder.com/data/icons/user-pictures/100/malecostume-512.png"
