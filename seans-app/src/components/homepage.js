@@ -7,7 +7,7 @@ class HomePage extends Component {
         return(
         <div>
         <div>
-            <a>TESTING TESTING TESTING</a>
+            <a>NEW BUILD NEW BUILD</a>
         </div>
          <div style = {{width: '100%', margin: 'auto', overflow: 'auto'}}>
             <Grid className = "landing-grid" style = {{background: 'black', overflow: 'auto'}}>
