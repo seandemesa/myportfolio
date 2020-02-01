@@ -81,7 +81,7 @@ li a:hover {
   background: -webkit-linear-gradient(to left, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
+  color: white;
   text-align: center;
   position: fixed;
   top: 5;
@@ -158,6 +158,8 @@ li a:hover {
 
 .banner-text{
   /*background-color:black;*/
+
+  color: white;
   font-Family: "Courier New";
   opacity: 100%;
   width: 75%;
