@@ -36,7 +36,7 @@ class HomePage extends Component {
                             fontSize: '3vw',
                             fontWeight: 'bold'}}>Full Stack Developer</h2>
                         <p style={{fontSize: '1.25vw',
-                            padding: '1em'}}>C++ | Python | HTML | CSS | JavaScript | React | NodeJS | MySQL</p>
+                            padding: '1em'}}>C++ | Python | Java | HTML | CSS | JavaScript | React | NodeJS | MySQL</p>
 
                         <hr style={{width: '50%', margin: 'auto'}}/>
                         
