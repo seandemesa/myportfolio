@@ -9,7 +9,8 @@ function App() {
   return (
     <div className="demo-big-content">
     <Layout fixedHeader="True">
-        <Header waterfall className="header-color" title=" " scroll>
+        <Header waterfall className="header-color" title=" " scroll
+        style={{background: 'linear-gradient(to left, #C06C84, #6C5B7B, #355C7D)'}}>
             <Navigation>
                 <Link to="/">Home</Link>
                 <Link to="/projects">Projects</Link>

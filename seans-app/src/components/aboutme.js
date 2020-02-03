@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import {Grid, Cell, Menu, MenuItem, IconButton} from 'react-mdl';
+import img01 from '../machineLearning2.png'
+import img02 from '../citruscideLogo2.png';
+import img03 from '../A_Star2.png';
 
 class NewProjectsPage extends Component {
 
@@ -117,12 +120,27 @@ class NewProjectsPage extends Component {
                 </div>
 
         <div className="parallaxTwo"></div>*/}
-        <div className="header-color"style={{color: '#777', backgroundColor: '#355C7D', textAlign: 'center', height: '100px', width: '100%'}}>
-        <p style={{color: 'white', fontWeight:'bold', fontSize:'40px', paddingTop:'30px', fontFamily: 'Courier New'}}>PROJECT 1</p> 
+        <div className="header-color" style={{background: 'linear-gradient(to left, #C06C84, #6C5B7B, #355C7D)',
+        textAlign: 'center', 
+        height: '100px', 
+        width: '100%'}}>
+
+        <p style={{color: 'white',
+        fontWeight:'bold', 
+        fontSize:'40px', 
+        paddingTop:'30px', 
+        fontFamily: 'Courier New'}}>PROJECT 1</p> 
         </div>
                 
 
-        <div className='parallax' style={{paddingLeft:'22%', paddingTop:'5%'}}>
+        <div className='parallax' style={{paddingLeft:'22%', 
+        paddingTop:'5%',
+        backgroundImage: "url(" + img01 + ")",
+        minHeight: '400px', 
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'}}>
         <Grid>
             <Cell col={1}>
                 <div style={{position: 'relative'}}>
@@ -155,11 +173,24 @@ class NewProjectsPage extends Component {
         </div>
 
         
-        <div className="header-color"style={{color: '#777', backgroundColor: '#355C7D', textAlign: 'center', height: '250px', width: '100%'}}>
-        <p style={{color: 'white', fontWeight:'bold', fontSize:'40px', fontFamily: 'Courier New'}}><br/><br/><br/><br/>PROJECT 2</p> 
+        <div className="header-color" style={{ background: 'linear-gradient(to left, #C06C84, #6C5B7B, #355C7D)', 
+        textAlign: 'center', 
+        height: '250px', 
+        width: '100%'}}>
+        <p style={{color: 'white', 
+        fontWeight:'bold', 
+        fontSize:'40px', 
+        fontFamily: 'Courier New'}}><br/><br/><br/><br/>PROJECT 2</p> 
         </div>
 
-        <div className='parallaxThree' style={{paddingLeft:'22%', paddingTop:'5%'}}>
+        <div className='parallaxThree' style={{paddingLeft:'22%', 
+        paddingTop:'5%',
+        backgroundImage: "url(" + img02 + ")",
+        minHeight: '400px', 
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'}}>
         <Grid>
             <Cell col={1}>
                 <div style={{position: 'relative'}}>
@@ -189,11 +220,21 @@ class NewProjectsPage extends Component {
         </Grid>
         </div>
 
-        <div className="header-color"style={{color: '#777', backgroundColor: '#355C7D', textAlign: 'center', height: '250px', width: '100%'}}>
+        <div className="header-color" style={{background: 'linear-gradient(to left, #C06C84, #6C5B7B, #355C7D)', 
+        textAlign: 'center', 
+        height: '250px', 
+        width: '100%'}}>
         <p style={{color: 'white', fontWeight:'bold', fontSize:'40px', fontFamily: 'Courier New'}}><br/><br/><br/><br/>PROJECT 3</p> 
         </div>
 
-        <div className='parallaxTwo' style={{paddingLeft:'22%', paddingTop:'5%'}}>
+        <div className='parallaxTwo' style={{paddingLeft:'22%', 
+        paddingTop:'5%',
+        backgroundImage: "url(" + img03 + ")",
+        minHeight: '400px', 
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'}}>
         <Grid>
             <Cell col={1}>
                 <div style={{position: 'relative'}}>
