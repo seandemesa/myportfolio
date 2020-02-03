@@ -1,7 +1,7 @@
 import React from 'react';
 //import logo from './logo.svg';
 import { BrowserRouter as Router, Route, Redirect, Switch, Link } from 'react-router-dom';
-import './App.css';
+//import './App.css';
 import {Layout, Header, Navigation, Drawer, Content, HeaderRow} from 'react-mdl';
 import Main from './components/main';
 
