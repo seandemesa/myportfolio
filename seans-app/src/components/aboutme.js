@@ -30,13 +30,13 @@ class NewProjectsPage extends Component {
         }
         else if (this.state.menu1Option == 1){
             return(
-                <a><iframe width="560" height="315" src="https://www.youtube.com/embed/yvd8nlgwLDU"
+                <a><iframe width="80%" height="315" src="https://www.youtube.com/embed/yvd8nlgwLDU"
                 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
             )
         }
         else if (this.state.menu1Option == 2){
             return(
-                <a><iframe width="560" height="315" src="https://www.youtube.com/embed/CxnGp9lrSL0"
+                <a><iframe width="80%" height="315" src="https://www.youtube.com/embed/CxnGp9lrSL0"
                 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
             )
         }
@@ -53,19 +53,19 @@ class NewProjectsPage extends Component {
         }
         else if (this.state.menu2Option == 1){
             return(
-                <a><iframe width="560" height="315" src="https://www.youtube.com/embed/8Q-wQxd4IzM"
+                <a><iframe width="80%" height="315" src="https://www.youtube.com/embed/8Q-wQxd4IzM"
                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
             )
         }
         else if (this.state.menu2Option == 2){
             return(
-                <a><iframe width="560" height="315" src="https://www.youtube.com/embed/6B5im93P0C8"
+                <a><iframe width="80%" height="315" src="https://www.youtube.com/embed/6B5im93P0C8"
                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
             )
         }
         else if (this.state.menu2Option == 3){
             return(
-                <a><iframe width="560" height="315" src="https://www.youtube.com/embed/J4ymak72zKk"
+                <a><iframe width="80%" height="315" src="https://www.youtube.com/embed/J4ymak72zKk"
                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
             )
         }
@@ -81,19 +81,19 @@ class NewProjectsPage extends Component {
         }
         else if (this.state.menu3Option == 1){
             return(
-                <a><iframe width="560" height="315" src="https://www.youtube.com/embed/jdmUFOq2Ve4"
+                <a><iframe width="80%" height="315" src="https://www.youtube.com/embed/jdmUFOq2Ve4"
                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
             )
         }
         else if (this.state.menu3Option == 2){
             return(
-                <a><iframe width="560" height="315" src="https://www.youtube.com/embed/L8HOsSR7giQ"
+                <a><iframe width="80%" height="315" src="https://www.youtube.com/embed/L8HOsSR7giQ"
                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
             )
         }
         else if (this.state.menu3Option == 3){
             return(
-                <a><iframe width="560" height="315" src="https://www.youtube.com/embed/Tq4B4yTPS6o"
+                <a><iframe width="80%" height="315" src="https://www.youtube.com/embed/Tq4B4yTPS6o"
                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
             )
         }
@@ -134,19 +134,19 @@ class NewProjectsPage extends Component {
         width: '100%'}} ref={this.scrollDiv01}>
             <div className="demo-tabs" style={{position: 'fixed', width: '100%', margin: 'auto', background: 'linear-gradient(to left, #C06C84, #6C5B7B, #355C7D)'}}>
                 <Tabs activeTab={this.state.activeTab} ripple >
-                    <Tab style = {{fontWeight: 'bold', color: 'white', fontFamily: 'Courier New'}} onClick={() => {
+                    <Tab style = {{fontSize: '1.5vw',fontWeight: 'bold', color: 'white', fontFamily: 'Courier New'}} onClick={() => {
                         this.scrollDiv01.current.scrollIntoView({ behavior: 'smooth' });
                       }}>PROJECT 1</Tab>
-                    <Tab style = {{fontWeight: 'bold', color: 'white', fontFamily: 'Courier New'}} onClick={() => {
+                    <Tab style = {{fontSize: '1.5vw',fontWeight: 'bold', color: 'white', fontFamily: 'Courier New'}} onClick={() => {
                         this.scrollDiv02.current.scrollIntoView({ behavior: 'smooth' });
                       }}>PROJECT 2</Tab>
-                    <Tab style = {{fontWeight: 'bold', color: 'white', fontFamily: 'Courier New'}} onClick={() => {
+                    <Tab style = {{fontSize: '1.5vw',fontWeight: 'bold', color: 'white', fontFamily: 'Courier New'}} onClick={() => {
                         this.scrollDiv03.current.scrollIntoView({ behavior: 'smooth' });
                       }}>PROJECT 3</Tab>
-                    <Tab style = {{fontWeight: 'bold', color: 'white', fontFamily: 'Courier New'}} onClick={() => {
+                    <Tab style = {{fontSize: '1.5vw',fontWeight: 'bold', color: 'white', fontFamily: 'Courier New'}} onClick={() => {
                         this.scrollDiv04.current.scrollIntoView({ behavior: 'smooth' });
                       }}>PROJECT 4</Tab>
-                    <Tab style = {{fontWeight: 'bold', color: 'white', fontFamily: 'Courier New'}} onClick={() => {
+                    <Tab style = {{fontSize: '1.5vw',fontWeight: 'bold', color: 'white', fontFamily: 'Courier New'}} onClick={() => {
                         this.scrollDiv05.current.scrollIntoView({ behavior: 'smooth' });
                       }}>PROJECT 5</Tab>
                 </Tabs>
@@ -174,7 +174,7 @@ class NewProjectsPage extends Component {
             <Cell col={1}>
             </Cell>
             <Cell col={6}>
-                <a><iframe width="560" height="315" 
+                <a><iframe width="80%" height="315" 
                 src="https://www.youtube.com/embed/0TTV1U64OYY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a><p style={{fontSize: '20px'}}><b><a href="https://stuffyouwatch.herokuapp.com/" target="_blank">Click here to visit website.</a></b></p>
             </Cell>
             <Cell col={4}>
@@ -352,7 +352,7 @@ class NewProjectsPage extends Component {
             <Cell col={1}>
             </Cell>
             <Cell col={6}>
-                <a><iframe width="560" height="315"
+                <a><iframe width="80%" height="315"
                  src="https://www.youtube.com/embed/Cf9CQ7qkc8Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
             </Cell>
             <Cell col={4}>
