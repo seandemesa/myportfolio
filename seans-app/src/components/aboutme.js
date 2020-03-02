@@ -1,13 +1,20 @@
-import React, {Component} from 'react';
-import {Grid, Cell, Menu, MenuItem, IconButton} from 'react-mdl';
-import img01 from '../machineLearning2.png'
+import React, {Component, createRef} from 'react';
+import {Grid, Cell, Menu, MenuItem, IconButton, Tabs, Tab} from 'react-mdl';
+import img01 from '../machineLearning03.png'
 import img02 from '../citruscideLogo2.png';
 import img03 from '../A_Star2.png';
+import img04 from '../HowlsCastleNew03.png';
+import img05 from '../themepark02.png';
 
 class NewProjectsPage extends Component {
 
     constructor(props){
         super(props);
+        this.scrollDiv01 = createRef();
+        this.scrollDiv02 = createRef();
+        this.scrollDiv03 = createRef();
+        this.scrollDiv04 = createRef();
+        this.scrollDiv05 = createRef();
         this.state = { menu1Option: 0,
                        menu2Option: 0,
                        menu3Option: 0};
@@ -120,10 +127,32 @@ class NewProjectsPage extends Component {
                 </div>
 
         <div className="parallaxTwo"></div>*/}
+
         <div className="header-color" style={{background: 'linear-gradient(to left, #C06C84, #6C5B7B, #355C7D)',
         textAlign: 'center', 
-        height: '100px', 
-        width: '100%'}}>
+        height: '150px', 
+        width: '100%'}} ref={this.scrollDiv01}>
+            <div className="demo-tabs" style={{position: 'fixed', width: '100%', margin: 'auto', background: 'linear-gradient(to left, #C06C84, #6C5B7B, #355C7D)'}}>
+                <Tabs activeTab={this.state.activeTab} ripple >
+                    <Tab style = {{fontWeight: 'bold', color: 'white', fontFamily: 'Courier New'}} onClick={() => {
+                        this.scrollDiv01.current.scrollIntoView({ behavior: 'smooth' });
+                      }}>PROJECT 1</Tab>
+                    <Tab style = {{fontWeight: 'bold', color: 'white', fontFamily: 'Courier New'}} onClick={() => {
+                        this.scrollDiv02.current.scrollIntoView({ behavior: 'smooth' });
+                      }}>PROJECT 2</Tab>
+                    <Tab style = {{fontWeight: 'bold', color: 'white', fontFamily: 'Courier New'}} onClick={() => {
+                        this.scrollDiv03.current.scrollIntoView({ behavior: 'smooth' });
+                      }}>PROJECT 3</Tab>
+                    <Tab style = {{fontWeight: 'bold', color: 'white', fontFamily: 'Courier New'}} onClick={() => {
+                        this.scrollDiv04.current.scrollIntoView({ behavior: 'smooth' });
+                      }}>PROJECT 4</Tab>
+                    <Tab style = {{fontWeight: 'bold', color: 'white', fontFamily: 'Courier New'}} onClick={() => {
+                        this.scrollDiv05.current.scrollIntoView({ behavior: 'smooth' });
+                      }}>PROJECT 5</Tab>
+                </Tabs>
+            </div>    
+        <br/>
+        <br/>
 
         <p style={{color: 'white',
         fontWeight:'bold', 
@@ -135,10 +164,51 @@ class NewProjectsPage extends Component {
 
         <div className='parallax' style={{paddingLeft:'22%', 
         paddingTop:'5%',
-        backgroundImage: "url(" + img01 + ")",
+        backgroundImage: "url(" + img04 + ")",
         minHeight: '400px', 
         backgroundAttachment: 'fixed',
         backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'}}>
+        <Grid>
+            <Cell col={1}>
+            </Cell>
+            <Cell col={6}>
+                <a><iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/0TTV1U64OYY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a><p style={{fontSize: '20px'}}><b><a href="https://stuffyouwatch.herokuapp.com/" target="_blank">Click here to visit website.</a></b></p>
+            </Cell>
+            <Cell col={4}>
+                <p><b><u>DESCRIPTION</u>: A web application that allows users to create a personalized list
+                of movies or TV shows that they've watched into 1 convinient place. Users can search for
+                their movie/show using a search function that utilizes an <a href="https://www.imdb.com/" target="_blank">IMDb</a> API.
+                They can adjust the dates they watched, add a personal rating, or add a description, all of which
+                gets stored to a database.
+                </b></p>
+                <br/>
+                <p><b><u>MY RESPONSIBILITIES</u>: Self-project (i.e. everything)</b></p>
+                <br/>
+                <p><b><u>TECHNOLOGIES USED</u>: AWS RDS (MySQL), Express, React, Node.js, Heroku </b></p>
+            </Cell>
+        </Grid>
+        </div>
+
+        <div className="header-color" style={{ background: 'linear-gradient(to left, #C06C84, #6C5B7B, #355C7D)', 
+        textAlign: 'center', 
+        height: '250px', 
+        width: '100%'}}>
+        <p style={{color: 'white', 
+        fontWeight:'bold', 
+        fontSize:'40px', 
+        fontFamily: 'Courier New'}} ref={this.scrollDiv02}><br/><br/><br/><br/>PROJECT 2</p> 
+        </div>
+        
+
+        <div className='parallax' style={{paddingLeft:'22%', 
+        paddingTop:'5%',
+        backgroundImage: "url(" + img01 + ")",
+        minHeight: '400px', 
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'left',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover'}}>
         <Grid>
@@ -157,20 +227,20 @@ class NewProjectsPage extends Component {
                 <a>{this.toggleMenu1Options()}</a>
             </Cell>
             <Cell col={4}>
-                <p><b>Description: </b>There exists a matrix world with various locations known as "pickup spots" or "dropoff spots". An agent is
-                tasked with the objective to find pickup spots and "carry" what it picked up to a dropoff spot and repeat this process until
-                every pickup spot is empty and every dropoff spot is full. It utilizes a combination of different reinforcement learning algorithms
+                <p><b><u>DESCRIPTION</u>: An application which has an agent that is tasked with the objective of finding "pickup" spots to "carry" over to a "dropoff" spot 
+                and repeat this process until every pickup spot is empty and every dropoff spot is full. It utilizes a combination of different reinforcement learning algorithms
                 (<a href="https://en.wikipedia.org/wiki/Q-learning" target="_blank">Q-Learning</a> & <a href="https://en.wikipedia.org/wiki/State-action-reward-state-action" target="_blank">SARSA</a>)
                  and policies which decide its behavior to try and effectively learn the world.
-                 </p>
+                 </b></p>
                 <br/>
-                <p><b>My Responsibilities:</b> I was tasked with combining the code of my team members whilst also creating a visual to see the agent
-                act in near real-time.</p>
+                <p><b><u>MY RESPONSIBILITIES</u>: I was tasked with combining the code of my team members whilst also creating a visual to see the agent
+                act in near real-time.</b></p>
                 <br/>
-                <p><b>Technologies Used:</b> Python, pygame </p>
+                <p><b><u>TECHNOLOGIES USED</u>: Python, pygame </b></p>
             </Cell>
         </Grid>
         </div>
+        
 
         
         <div className="header-color" style={{ background: 'linear-gradient(to left, #C06C84, #6C5B7B, #355C7D)', 
@@ -180,8 +250,9 @@ class NewProjectsPage extends Component {
         <p style={{color: 'white', 
         fontWeight:'bold', 
         fontSize:'40px', 
-        fontFamily: 'Courier New'}}><br/><br/><br/><br/>PROJECT 2</p> 
+        fontFamily: 'Courier New'}} ref={this.scrollDiv03}><br/><br/><br/><br/>PROJECT 3</p> 
         </div>
+        
 
         <div className='parallaxThree' style={{paddingLeft:'22%', 
         paddingTop:'5%',
@@ -208,14 +279,14 @@ class NewProjectsPage extends Component {
                 <a>{this.toggleMenu2Options()}</a>
             </Cell>
             <Cell col={4}>
-                <p><b>Description: </b>An 8-bit/retro <a href="https://en.wikipedia.org/wiki/Metroidvania" target="_blank">metroidvania</a> style game
+                <p><b><u>DESCRIPTION</u>: An 8-bit/retro <a href="https://en.wikipedia.org/wiki/Metroidvania" target="_blank">metroidvania</a> style game
                 that was also heavily inspired by <a href="http://www.cupheadgame.com/" target="_blank">Cuphead.</a> Includes 5 short levels along with
                 6 bosses that ramp up with difficulty and intensity.
-                </p>
+                </b></p>
                 <br/>
-                <p><b>My Responsibilities: </b> Design and implementation of all 6 bosses.</p>
+                <p><b><u>MY RESPONSIBILITIES</u>:  Design and implementation of all 6 bosses.</b></p>
                 <br/>
-                <p><b>Technologies Used: </b> Unity2D, C#, GitHub</p>
+                <p><b><u>TECHNOLOGIES USED</u>:  Unity2D, C#, GitHub</b></p>
             </Cell>
         </Grid>
         </div>
@@ -224,7 +295,7 @@ class NewProjectsPage extends Component {
         textAlign: 'center', 
         height: '250px', 
         width: '100%'}}>
-        <p style={{color: 'white', fontWeight:'bold', fontSize:'40px', fontFamily: 'Courier New'}}><br/><br/><br/><br/>PROJECT 3</p> 
+        <p style={{color: 'white', fontWeight:'bold', fontSize:'40px', fontFamily: 'Courier New'}} ref={this.scrollDiv04}><br/><br/><br/><br/>PROJECT 4</p> 
         </div>
 
         <div className='parallaxTwo' style={{paddingLeft:'22%', 
@@ -252,17 +323,51 @@ class NewProjectsPage extends Component {
                 <a>{this.toggleMenu3Options()}</a>
             </Cell>
             <Cell col={4}>
-                <p><b>Description: </b>A visualization of the <a href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="_blank">A* search algorithm.</a>
-                  Includes the option to scale the matrix, select the starting and destination nodes, create unique walls, and/or generate random walls.
-                </p>
+                <p><b><u>DESCRIPTION</u>: A visualization of the <a href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="_blank">A* search algorithm</a>. 
+                   Includes the option to scale the matrix, select the starting and destination nodes, create unique walls, and/or generate random walls.
+                  </b></p>
                 <br/>
-                <p><b>My Responsibilities: </b>Self-project (i.e. everything) </p>
+                <p><b><u>MY RESPONSIBILITIES</u>: Self-project (i.e. everything) </b></p>
                 <br/>
-                <p><b>Technologies Used: </b>Python, pygame </p>
+                <p><b><u>TECHNOLOGIES USED</u>: Python, pygame </b></p>
             </Cell>
         </Grid>
         </div>
         
+        <div className="header-color" style={{background: 'linear-gradient(to left, #C06C84, #6C5B7B, #355C7D)', 
+        textAlign: 'center', 
+        height: '250px', 
+        width: '100%'}}>
+        <p style={{color: 'white', fontWeight:'bold', fontSize:'40px', fontFamily: 'Courier New'}} ref={this.scrollDiv05}><br/><br/><br/><br/>PROJECT 5</p> 
+        </div>
+        <div className='parallaxTwo' style={{paddingLeft:'22%', 
+        paddingTop:'5%',
+        backgroundImage: "url(" + img05 + ")",
+        minHeight: '400px', 
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'}}>
+        <Grid>
+            <Cell col={1}>
+            </Cell>
+            <Cell col={6}>
+                <a><iframe width="560" height="315"
+                 src="https://www.youtube.com/embed/Cf9CQ7qkc8Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+            </Cell>
+            <Cell col={4}>
+                <p><b><u>DESCRIPTION</u>: A web application to emulate a system for themepark employees and managers. For employees,
+                their accounts would show a calendar of who is working when and in what zone. For higher-ups such as managers, the application
+                allowed them to update information on rides, employees, etc. and provided graphs to visualize data and performance.
+                </b></p>
+                <br/>
+                <p><b><u>MY RESPONSIBILITIES</u>: Connecting the frontend and backend to communicate data to and from database</b></p>
+                <br/>
+                <p><b><u>TECHNOLOGIES USED</u>: PHP, AWS RDS (MySQL), JavaScript, CSS </b></p>
+            </Cell>
+        </Grid>
+        </div>
+
         </div>
             
         )
